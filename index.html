@@ -7,22 +7,25 @@
 <body>
 <header>
 	<nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li onMouseOver="show('experience')" onMouseOut="hide('experience')"><a href="experience.html">The Experience</a>
+        <ul id="navbar">
+            <li><a id="home">Home</a></li>
+            <li><a id="the-experience" class="dropdown-parent">The Experience</a>
             <!-- First Tier Drop Down -->
-            <ul id="experience">
-                <li><a href="aurora.html">Aurora Borealis</a></li>
-                <li><a href="constellation.html">Constellation</a></li>
-                <li><a href="earthorbit.html">Earth Orbit</a></li>
-				<li><a href="eva.html">EVA</a></li>
-            </ul>        
+				<ul class="dropdown">
+					<li><a id="aurora-borealis">Aurora Borealis</a></li>
+					<li><a id="constellation">Constellation</a></li>
+					<li><a id="earth-orbit">Earth Orbit</a></li>
+					<li><a id="eva">EVA</a></li>
+				</ul>        
             </li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a id="pricing">Pricing</a></li>
+            <li><a id="about-us">About Us</a></li>
+            <li><a id="login">Login</a></li>
         </ul>
 	<nav>
 </header>
+<section>
+<h1 id="page-title"></h1>
+</section>
 </body>
 </html>
