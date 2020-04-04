@@ -53,17 +53,13 @@ nav ul ul {
 	margin-left:0px;
 	background: rgba(0,0,0,0.5);
     opacity: 0;
-    transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in-out;
 	visibility:hidden;
 }
-nav ul li#experience-item:hover ul {
+.show {
 	opacity: 1;
 	visibility:visible;
 }
-/* .show-menu {
-    opacity: 1;
-	visibility:visible;
-} */
 /* Fisrt Tier Dropdown */
 nav ul ul li {
 	float:none;
