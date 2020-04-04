@@ -9,9 +9,8 @@ window.onload=function(){
 		var selectedName = this.innerText;
 		if (selectedName == "The Experience")
 		{
-			//Do nothing
-			var element = document.getElementById("experience-dropdown");
-			element.classList.toggle("show");
+			var experience = document.getElementById("experience-dropdown");
+			experience.classList.toggle("show");
 		}
 		else
 		{
