@@ -8,11 +8,11 @@ window.onload=function(){
     function pageChange() {
 		var selectedName = this.innerText;
 		var className = this.className;
+		var experience = document.querySelector(".dropdown");
 		/*Check if class name exists*/
 		if (className == "dropdown-parent")
 		{
-			var experience = document.querySelector(".dropdown");
-			experience.classList.toggle("show");
+			experience.classList.add("show");
 		}
 		else
 		{
@@ -23,8 +23,17 @@ window.onload=function(){
 			pageTitle.textContent += this.innerText;
 			pageTitle.classList.remove("fade-out");
 			pageTitle.classList.add("fade-in");	
+			experience.classList.remove("show");	
 		}
     }
+	
+	document.addEventListener("click", function(event) {
+	// If user clicks inside the element, do nothing
+	if (event.target.closest(".box")) return;
+
+	// If user clicks outside the element, hide it!
+	box.classList.add("js-is-hidden");
+});
 	
 	
 }
