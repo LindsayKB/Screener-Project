@@ -7,9 +7,11 @@ window.onload=function(){
 
     function pageChange() {
 		var selectedName = this.innerText;
-		if (selectedName == "The Experience")
+		var className = this.className;
+		/*Check if class name exists*/
+		if (className == "dropdown-parent")
 		{
-			var experience = document.getElementById("experience-dropdown");
+			var experience = document.querySelector(".dropdown");
 			experience.classList.toggle("show");
 		}
 		else
