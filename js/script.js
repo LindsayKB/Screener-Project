@@ -6,13 +6,23 @@ window.onload=function(){
     }
 
     function pageChange() {
-		var pageTitle = document.getElementById("page-title");
-		pageTitle.classList.remove("fade-in");
-		pageTitle.classList.add("fade-out");
-		pageTitle.textContent = "";
-		pageTitle.textContent += this.innerText;
-		pageTitle.classList.remove("fade-out");
-		pageTitle.classList.add("fade-in");	
+		var selectedName = this.innerText;
+		if (selectedName == "The Experience")
+		{
+			//Do nothing
+			var element = document.getElementById("experience-dropdown");
+			element.classList.toggle("show");
+		}
+		else
+		{
+			var pageTitle = document.getElementById("page-title");
+			pageTitle.classList.remove("fade-in");
+			pageTitle.classList.add("fade-out");
+			pageTitle.textContent = "";
+			pageTitle.textContent += this.innerText;
+			pageTitle.classList.remove("fade-out");
+			pageTitle.classList.add("fade-in");	
+		}
     }
 	
 	
