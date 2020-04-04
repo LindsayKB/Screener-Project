@@ -1,11 +1,11 @@
 window.onload=function(){
-	var lis = document.getElementById("navbar").getElementsByTagName('a');
+	var menu = document.getElementById("navbar").getElementsByTagName('a');
 
-    for (var i=0; i<lis.length; i++) {
-        lis[i].addEventListener('click', fadeOut, false);
+    for (var i=0; i<menu.length; i++) {
+        menu[i].addEventListener('click', pageChange, false);
     }
 
-    function fadeOut() {
+    function pageChange() {
 		var pageTitle = document.getElementById("page-title");
 		pageTitle.classList.remove("fade-in");
 		pageTitle.classList.add("fade-out");
